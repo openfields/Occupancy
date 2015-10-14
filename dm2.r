@@ -95,10 +95,10 @@ nb <- 10000
 nt <- 1
 
 # compile data
-jags.data <- list()
+jags.data <- list(N, nSites, nStages)
 
 # specify parameters to monitor
-parameters <- c("")
+parameters <- c("lambda","omega","gamma","Ntot")
 
 # initial values
 inits <- function(){}
